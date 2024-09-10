@@ -1,0 +1,31 @@
+{
+  "name": "@afirmashop/common-logic",
+  "version": "1.1.4",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "lint": "tsc --noEmit && eslint */**/*.{js,ts,tsx} --quiet --fix",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "adilsonfuxe <delveloper@adilsonfuxe.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^22.5.4",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "description": "useful package for type sharing in different services.",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.1"
+  }
+}
